@@ -30,5 +30,6 @@ class Produto(models.Model):
 
 class Venda(models.Model):
     comprador = models.ForeignKey(Usuario, on_delete=models.CASCADE)
-    data_venda = models.DateField()
+    data_venda = models.DateTimeField()
     lista_produtos = models.ManyToManyField(Produto, related_name='vendas')
+    preco_final = models.FloatField(default=0)
