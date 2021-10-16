@@ -6,7 +6,7 @@ from rest_framework.test import APITestCase
 import django
 
 django.setup()
-from tutorial.quickstart.models import Usuario, Funcionario
+from tutorial.quickstart.models import Usuario
 
 
 class UsuarioTests(APITestCase):
